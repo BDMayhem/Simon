@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Simon</title>
+  <link href="https://fonts.googleapis.com/css?family=Rokkitt:300,400" rel="stylesheet">
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div>
+  <div class="press zero" id="0" onmousedown="mouseDown(id)" onmouseup="mouseUp(id)" ontouchstart="mouseDown(id)" ontouchend="mouseUp(id)"></div>
+  <div class="press one" id="1" onmousedown="mouseDown(id)" onmouseup="mouseUp(id)" ontouchstart="mouseDown(id)" ontouchend="mouseUp(id)"></div>
+</div>
+<div>
+  <div class="press two" id="2" onmousedown="mouseDown(id)" onmouseup="mouseUp(id)" ontouchstart="mouseDown(id)" ontouchend="mouseUp(id)"></div>
+  <div class="press three" id="3" onmousedown="mouseDown(id)" onmouseup="mouseUp(id)" ontouchstart="mouseDown(id)" ontouchend="mouseUp(id)"></div>
+</div>
+
+<div class="center">
+  <div id="start-button">Start
+    <label class="switch">
+      <input type="radio" id="start">
+      <div class="slider round"></div>
+    </label>
+  </div>
+  
+  <div id="strict-button">Strict
+    <label class="switch">
+      <input type="checkbox" id="strict">
+      <div class="slider round"></div>
+    </label>
+  </div>
+  
+  <div id="reset-button">Reset
+    <label class="switch">
+      <input type="checkbox" id="reset">
+      <div class="slider round blank"></div>
+    </label>
+  </div>
+  
+  <div id="counter"></div>
+</div>
+  
+    <script src="js/index.js"></script>
+
+</body>
+</html>
